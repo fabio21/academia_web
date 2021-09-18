@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:asset_cache/asset_cache.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:web_site_academia/widgets/responsive.dart';
 import 'package:flutter/material.dart';
@@ -28,6 +29,8 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
     'assets/images/ballet.jpeg',
   ];
 
+  final imageAssets = ImageAssetCache(basePath: 'assets/images/');
+
   final List<String> places = [
     'NATAÇÃO',
     'HIDROGINASTICA',
@@ -37,7 +40,7 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
     'BALLET',
   ];
 
-  List<Widget> generateImageTiles(screenSize) {
+  List<Widget> generateImageTiles(screenSize)  {
     return images
         .map(
           (element) => ClipRRect(
@@ -206,17 +209,3 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
     });
   }
 }
-
-// class InvertedRect extends CustomClipper<Path> {
-//   @override
-//   getClip(Size size) {
-//     print(size);
-//     return Path()
-//       ..addRect(Rect.fromLTWH(0.0, 0.0, size.width, size.height))
-//       ..addRect(Rect.fromLTWH(100.0, 40.0, 100, 100))
-//       ..fillType = PathFillType.evenOdd;
-//   }
-//
-//   @override
-//   bool shouldReclip(CustomClipper<Path> oldClipper) => true;
-// }

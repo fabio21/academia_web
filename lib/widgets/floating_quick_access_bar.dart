@@ -21,7 +21,7 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
   List<IconData> icons = [
     Icons.article,
     Icons.flatware_sharp,
-    Icons.people,
+    Icons.local_parking,
     Icons.wb_sunny
   ];
 

@@ -59,34 +59,28 @@ class BottomBar extends StatelessWidget {
   Column buildColumnMobile() {
     return Column(
       children: [
-        Row(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            buildBottomBarAbout(),
-           // buildBottomBarFaq(),
-            buildBottomBarFacebook(),
-          ],
-        ),
+        buildBottomBarFacebook(),
         buildContainerLine(),
-        SizedBox(height: 20),
         buildInfoTextEmail(),
-        // SizedBox(height: 5),
-        // buildInfoAdrress(),
         SizedBox(height: 5),
         buildInfoTel(),
         SizedBox(height: 5),
         buildInfoWhatsapp(),
-        SizedBox(height: 20),
+
         buildContainerLine(),
-        SizedBox(height: 20),
+
+        buildBottomBarAbout(),
+        buildContainerLine(),
+
         buildTextCopyright(),
+
       ],
     );
   }
 
   Container buildContainerLine() {
     return Container(
+      margin: EdgeInsets.symmetric(vertical: 20),
       color: Colors.blueGrey,
       width: double.maxFinite,
       height: 1,
@@ -148,17 +142,17 @@ class BottomBar extends StatelessWidget {
   }
 
   openWhatsApp(String cell) async {
-      var whatsappUrl = "whatsapp://send?web=+$cell&text=Olá,tudo bem ?";
+    var whatsappUrl = "whatsapp://send?web=+$cell&text=Olá,tudo bem ?";
+    if (await canLaunch(whatsappUrl)) {
+      abrirWhatsApp(whatsappUrl);
+    } else {
+      var whatsappUrl = "https://wa.me/$cell/?text=Olá,tudo bem?";
       if (await canLaunch(whatsappUrl)) {
         abrirWhatsApp(whatsappUrl);
-      }else{
-        var whatsappUrl = "https://wa.me/$cell/?text=Olá,tudo bem?";
-        if (await canLaunch(whatsappUrl)) {
-          abrirWhatsApp(whatsappUrl);
-        }else{
-          throw 'Could not launch $whatsappUrl';
-        }
+      } else {
+        throw 'Could not launch $whatsappUrl';
       }
+    }
   }
 
   abrirWhatsApp(String whatsappUrl) async {
@@ -206,23 +200,25 @@ class BottomBar extends StatelessWidget {
   Widget buildBottomBarFacebook() {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
-      child: BottomBarColumn(
+      child:
+      BottomBarColumn(
         heading: 'SOCIAL',
         s1: 'Instagram',
+        icon1: Icons.camera_alt_outlined,
         link1: "https://www.instagram.com/academiagalpao21/?hl=pt-br",
         s2: 'Facebook',
+        icon2: Icons.facebook,
         link2: "https://pt-br.facebook.com/AcademiaGalpao21/",
-        s3: '',
       ),
     );
   }
+
 
   BottomBarColumn buildBottomBarFaq() {
     return BottomBarColumn(
       heading: 'REFERENCIA',
       s1: 'Atacadão',
       s2: 'Parque dos Paturis',
-      s3: '',
     );
   }
 
@@ -231,7 +227,6 @@ class BottomBar extends StatelessWidget {
       heading: 'FUNCIONAMENTO',
       s1: 'Segunda a Sexta 6:00h às 23:00h',
       s2: 'Sabado das 8:00h ao 14:00h',
-      s3: '',
     );
   }
 
@@ -246,4 +241,5 @@ class BottomBar extends StatelessWidget {
       throw 'Could not launch $url';
     }
   }
+
 }
