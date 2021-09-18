@@ -1,0 +1,37 @@
+name: web_site_academia
+description: site para clinte
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  carousel_slider: ^4.0.0-nullsafety.0
+  easy_dynamic_theme: ^2.0.0
+  firebase_core: ^1.0.2
+  firebase_auth: ^1.0.1
+  google_sign_in: ^5.0.1
+  url_launcher: ^6.0.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: fonts/Montserrat-Regular.ttf
+
+    - family: Electrolize
+      fonts:
+        - asset: fonts/Electrolize-Regular.ttf
+
+  assets:
+    - assets/images/
