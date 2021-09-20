@@ -1,6 +1,5 @@
 import 'dart:ui';
 
-import 'package:asset_cache/asset_cache.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:web_site_academia/widgets/responsive.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +19,11 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
 
   int _current = 0;
 
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
   final List<String> images = [
     'assets/images/natacao.jpeg',
     'assets/images/picina.jpg',
@@ -28,8 +32,6 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
     'assets/images/jui.jpeg',
     'assets/images/ballet.jpeg',
   ];
-
-  final imageAssets = ImageAssetCache(basePath: 'assets/images/');
 
   final List<String> places = [
     'NATAÇÃO',

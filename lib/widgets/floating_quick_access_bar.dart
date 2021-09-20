@@ -1,3 +1,7 @@
+import 'dart:developer';
+
+import 'package:fluro/fluro.dart';
+import 'package:web_site_academia/config/application.dart';
 import 'package:web_site_academia/widgets/responsive.dart';
 import 'package:flutter/material.dart';
 
@@ -17,8 +21,14 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
   List _isHovering = [false, false, false, false];
   List<Widget> rowElements = [];
 
-  List<String> items = ['Avaliação Fisica', 'Nutricionista', 'Estacionamento'];
+  List<String> items = [
+    "Horarios",
+    'Avaliação Fisica',
+    'Nutricionista',
+    'Estacionamento Grátis'
+  ];
   List<IconData> icons = [
+    Icons.access_time,
     Icons.article,
     Icons.flatware_sharp,
     Icons.local_parking,
@@ -59,7 +69,7 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
                     InkWell(
                       splashColor: Colors.transparent,
                       hoverColor: Colors.transparent,
-                      onTap: () {},
+                      onTap: () => pushPage(items[pageIndex]),
                       child: Text(
                         items[pageIndex],
                         style: TextStyle(
@@ -126,7 +136,7 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
             value ? _isHovering[i] = true : _isHovering[i] = false;
           });
         },
-        onTap: () {},
+        onTap: () => pushPage(items[i]),
         child: Text(
           items[i],
           style: TextStyle(
@@ -151,5 +161,18 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
     }
 
     return rowElements;
+  }
+
+  void pushPage(String next) {
+    if (next == "Horarios") navigator("/timesheet");
+    else log(next);
+  }
+
+  void navigator(String next) {
+    Application.router
+        .navigateTo(context, next, transition: TransitionType.native)
+        .then((result) {
+      Application.router.navigateTo(context, "/", rootNavigator: true);
+    });
   }
 }

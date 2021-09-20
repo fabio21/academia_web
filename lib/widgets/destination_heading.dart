@@ -2,9 +2,11 @@ import 'package:web_site_academia/widgets/responsive.dart';
 import 'package:flutter/material.dart';
 
 class DestinationHeading extends StatelessWidget {
+  final String title;
   const DestinationHeading({
     Key? key,
     required this.screenSize,
+    this.title: 'Modalidades',
   }) : super(key: key);
 
   final Size screenSize;
@@ -31,7 +33,7 @@ class DestinationHeading extends StatelessWidget {
 
   Text buildTextHeader({double fontSize = 24}) {
     return Text(
-      'Modalidades',
+      title,
       textAlign: TextAlign.center,
       style: TextStyle(
         fontSize: fontSize,

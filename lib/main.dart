@@ -1,7 +1,9 @@
 import 'package:easy_dynamic_theme/easy_dynamic_theme.dart';
+import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
-import 'package:web_site_academia/page/home.dart';
 
+import 'config/application.dart';
+import 'config/routes.dart';
 import 'utils/theme_data.dart';
 
 void main() {
@@ -12,16 +14,32 @@ void main() {
   );
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+
+  _MyAppState() {
+    final router = FluroRouter();
+    Routes.configureRoutes(router);
+    Application.router = router;
+  }
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    final app = MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Academia Galpão 21',
       theme: lightThemeData,
       darkTheme: darkThemeData,
       themeMode: EasyDynamicTheme.of(context).themeMode,
-      home: HomePage(),
+      //initialRoute: '/',
+      onGenerateRoute: Application.router.generator,
     );
+    return app;
   }
 }
+
+

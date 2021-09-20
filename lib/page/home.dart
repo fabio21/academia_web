@@ -1,5 +1,6 @@
 import 'package:easy_dynamic_theme/easy_dynamic_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:web_site_academia/widgets/app_bar/app_bar_custom.dart';
 import 'package:web_site_academia/widgets/bottom_bar.dart';
 import 'package:web_site_academia/widgets/carousel.dart';
 import 'package:web_site_academia/widgets/destination_heading.dart';
@@ -8,6 +9,7 @@ import 'package:web_site_academia/widgets/featured_heading.dart';
 import 'package:web_site_academia/widgets/featured_tiles.dart';
 import 'package:web_site_academia/widgets/floating_quick_access_bar.dart';
 import 'package:web_site_academia/widgets/responsive.dart';
+import 'package:web_site_academia/widgets/stack_image_header.dart';
 import 'package:web_site_academia/widgets/top_bar_contents.dart';
 import 'package:web_site_academia/widgets/web_scrollbar.dart';
 
@@ -30,10 +32,18 @@ class _HomePageState extends State<HomePage> {
   }
 
   @override
+  void dispose() {
+   _scrollController.dispose();
+    super.dispose();
+  }
+
+  @override
   void initState() {
-    _scrollController = ScrollController();
-    _scrollController.addListener(_scrollListener);
     super.initState();
+    if(mounted) {
+      _scrollController = ScrollController();
+      _scrollController.addListener(_scrollListener);
+    }
   }
 
   @override
@@ -46,8 +56,8 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Theme.of(context).backgroundColor,
       extendBodyBehindAppBar: true,
       appBar: ResponsiveWidget.isSmallScreen(context)
-          ? buildAppBarMoble(context)
-          : buildPreferredSizeWeb(screenSize),
+          ? buildAppBarMoble(context, _opacity)
+          : buildPreferredSizeWeb(screenSize, _opacity),
       //drawer: ExploreDrawer(),
       body: WebScrollbar(
         color: Colors.blueGrey,
@@ -60,7 +70,7 @@ class _HomePageState extends State<HomePage> {
           physics: ClampingScrollPhysics(),
           child: Column(
             children: [
-               buildStackImage(screenSize),
+              StackImageHeader(screenSize: screenSize),
               DestinationHeading(screenSize: screenSize),
               DestinationCarousel(),
               SizedBox(height: screenSize.height / 10),
@@ -72,71 +82,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Stack buildStackImage(Size screenSize) {
-    return Stack(
-      children: [
-        Container(
-          child: SizedBox(
-            height: screenSize.height * 0.45,
-            width: screenSize.width,
-            child: Image.asset(
-              'assets/images/bannerfundo.jpg',
-              fit: BoxFit.cover,
-            ),
-          ),
-        ),
-        Column(
-          children: [
-            FloatingQuickAccessBar(screenSize: screenSize),
-            // Container(
-            //   child: Column(
-            //     children: [
-            //       FeaturedHeading(
-            //         screenSize: screenSize,
-            //       ),
-            //       FeaturedTiles(screenSize: screenSize)
-            //     ],
-            //   ),
-            // ),
-          ],
-        )
-      ],
-    );
-  }
-
-  PreferredSize buildPreferredSizeWeb(Size screenSize) {
-    return PreferredSize(
-      preferredSize: Size(screenSize.width, 1000),
-      child: TopBarContents(_opacity),
-    );
-  }
-
-  AppBar buildAppBarMoble(BuildContext context) {
-    return AppBar(
-      backgroundColor:
-          Theme.of(context).bottomAppBarColor.withOpacity(_opacity),
-      elevation: 0,
-      centerTitle: true,
-      actions: [
-        IconButton(
-          icon: Icon(Icons.brightness_6),
-          splashColor: Colors.transparent,
-          highlightColor: Colors.transparent,
-          onPressed: () {
-            EasyDynamicTheme.of(context).changeTheme();
-          },
-        ),
-      ],
-      title: Text(
-        'Academia Galpão 21',
-        style: TextStyle(
-          color: Colors.blueGrey[100],
-          fontSize: 20,
-          fontFamily: 'Montserrat',
-          fontWeight: FontWeight.w400,
-          letterSpacing: 3,
-        ),
-      ),
-    );
-  }
 }
