@@ -39,10 +39,27 @@ class _WebScrollbarState extends State<WebScrollbar> {
   @override
   void initState() {
     super.initState();
-    if(mounted){
+    timer = Timer(Duration(seconds: 5), () { });
+    if (mounted) {
       widget.controller.addListener(_scrollListener);
       _isUpdating = false;
     }
+  }
+
+  @override
+  void setState(VoidCallback fn) {
+    if (mounted) {
+      super.setState(fn);
+    }
+  }
+
+  @override
+  void dispose() {
+    if (timer.isActive) {
+      timer.cancel();
+    }
+ //   widget.controller.dispose();
+    super.dispose();
   }
 
   @override

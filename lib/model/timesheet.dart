@@ -3,9 +3,10 @@ class TimesheetModel {
     String? livingRoom;
     DateTime? schedule;
     String? type;
+    int? color;
     int? week;
 
-    TimesheetModel({this.instructor, this.livingRoom, this.schedule, this.type, this.week});
+    TimesheetModel({this.instructor, this.livingRoom, this.schedule, this.type, this.week, this.color});
 
     factory TimesheetModel.fromJson(Map<String, dynamic> json) {
         return TimesheetModel(
@@ -13,6 +14,7 @@ class TimesheetModel {
             livingRoom: json['living_room'],
             schedule: DateTime.parse(json['schedule']),
             type: json['type'],
+            color: json['color'] != null ? int.parse("0x${json["color"]}") : null,
             week: json["week"],
         );
     }
@@ -24,6 +26,7 @@ class TimesheetModel {
         data['schedule'] = this.schedule;
         data['type'] = this.type;
         data['week'] = this.week;
+        data['color'] = this.color;
         return data;
     }
 }

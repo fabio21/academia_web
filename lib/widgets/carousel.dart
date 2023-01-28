@@ -114,11 +114,11 @@ class _DestinationCarouselState extends State<DestinationCarousel> {
                                   color: _isHovering[i]
                                       ? Theme.of(context)
                                           .primaryTextTheme
-                                          .button!
+                                          .labelLarge!
                                           .decorationColor
                                       : Theme.of(context)
                                           .primaryTextTheme
-                                          .button!
+                                          .labelLarge!
                                           .color,
                                 ),
                               ),

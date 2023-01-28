@@ -1,16 +1,10 @@
-import 'package:easy_dynamic_theme/easy_dynamic_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:web_site_academia/widgets/app_bar/app_bar_custom.dart';
 import 'package:web_site_academia/widgets/bottom_bar.dart';
 import 'package:web_site_academia/widgets/carousel.dart';
 import 'package:web_site_academia/widgets/destination_heading.dart';
-import 'package:web_site_academia/widgets/explore_drawer.dart';
-import 'package:web_site_academia/widgets/featured_heading.dart';
-import 'package:web_site_academia/widgets/featured_tiles.dart';
-import 'package:web_site_academia/widgets/floating_quick_access_bar.dart';
 import 'package:web_site_academia/widgets/responsive.dart';
 import 'package:web_site_academia/widgets/stack_image_header.dart';
-import 'package:web_site_academia/widgets/top_bar_contents.dart';
 import 'package:web_site_academia/widgets/web_scrollbar.dart';
 
 class HomePage extends StatefulWidget {
@@ -53,7 +47,7 @@ class _HomePageState extends State<HomePage> {
         ? _scrollPosition / (screenSize.height * 0.40)
         : 1;
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       extendBodyBehindAppBar: true,
       appBar: ResponsiveWidget.isSmallScreen(context)
           ? buildAppBarMoble(context, _opacity)

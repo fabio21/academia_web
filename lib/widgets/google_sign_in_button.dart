@@ -22,8 +22,7 @@ class _GoogleButtonState extends State<GoogleButton> {
       ),
       child: OutlinedButton(
         style: OutlinedButton.styleFrom(
-          primary: Colors.blueGrey.shade100,
-          shape: RoundedRectangleBorder(
+          foregroundColor: Colors.blueGrey.shade100, shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
             side: BorderSide(color: Colors.blueGrey, width: 3),
           ),

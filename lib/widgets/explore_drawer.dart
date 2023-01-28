@@ -19,7 +19,7 @@ class _ExploreDrawerState extends State<ExploreDrawer> {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        color: Theme.of(context).bottomAppBarColor,
+        color: Theme.of(context).bottomAppBarTheme.color,
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
@@ -31,8 +31,7 @@ class _ExploreDrawerState extends State<ExploreDrawer> {
                       width: double.maxFinite,
                       child: TextButton(
                         style: TextButton.styleFrom(
-                          primary: Colors.black,
-                          shape: RoundedRectangleBorder(
+                          foregroundColor: Colors.black, shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15),
                           ),
                         ),
@@ -88,8 +87,7 @@ class _ExploreDrawerState extends State<ExploreDrawer> {
                       width: double.maxFinite,
                       child: TextButton(
                         style: TextButton.styleFrom(
-                          primary: Colors.black,
-                          shape: RoundedRectangleBorder(
+                          foregroundColor: Colors.black, shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15),
                           ),
                         ),

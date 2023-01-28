@@ -1,828 +1,922 @@
- [
-    {
-      "instructor": "Jose",
-      "living_room": "0",
-      "schedule":  "2019-07-19T06:30:00.000000Z",
-      "type":  "Natação Adulto",
-      "week": 1
-    },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T06:30:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T06:30:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T06:30:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T06:30:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 5
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T07:15:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T07:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T07:15:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T07:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T07:15:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 5
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T08:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T08:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T08:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T08:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T08:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 5
-   },
-
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T08:45:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T08:45:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T08:45:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T08:45:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T08:45:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 5
-   },
-
-
-
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T09:30:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T09:30:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 2
-   },
-
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T09:30:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T09:30:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T09:30:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 5
-   },
-
-
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T10:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T10:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T10:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T10:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T10:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 5
-   },
-
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T14:15:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T14:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T14:15:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T14:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T14:15:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 5
-   },
-
-
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T15:00:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T15:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 2
-   },
-
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T15:00:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T15:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T15:00:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 5
-   },
-
-
-
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T15:45:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T15:45:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T15:45:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T15:45:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T15:45:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 5
-   },
-
-
-
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T16:30:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T16:30:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T16:30:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T16:30:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T16:30:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 5
-   },
-
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T17:15:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T17:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T17:15:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T17:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T17:15:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 5
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T18:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T18:00:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T18:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T18:00:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T18:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 5
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T18:45:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T18:45:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T18:45:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T18:45:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T18:45:00.000000Z",
-     "type":  "Hidroginástica",
-     "week": 5
-   },
-
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T19:30:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T19:30:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T19:30:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T19:30:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T19:30:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 5
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T20:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T20:15:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T20:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T20:15:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T20:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 5
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T21:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T21:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T21:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T21:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T21:00:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 5
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T21:45:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 1
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T21:45:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 2
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T21:45:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 3
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T21:45:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 4
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T21:45:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 5
-   },
-
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T08:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 6
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T09:00:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 6
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T09:45:00.000000Z",
-     "type":  "Natação Infantil",
-     "week": 6
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T10:30:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 6
-   },
-   {
-     "instructor": "Jose",
-     "living_room": "0",
-     "schedule":  "2019-07-19T11:15:00.000000Z",
-     "type":  "Natação Adulto",
-     "week": 6
-   },
-
-   {
-     "instructor": "Marcelo",
-     "living_room": "1",
-     "schedule":  "2019-07-19T07:45:00.000000Z",
-     "type":  "Zumba",
-     "week": 1
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "2",
-     "schedule":  "2019-07-19T07:30:00.000000Z",
-     "type":  "Pilates",
-     "week": 2
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "1",
-     "schedule":  "2019-07-19T07:45:00.000000Z",
-     "type":  "Zumba",
-     "week": 3
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "2",
-     "schedule":  "2019-07-19T07:30:00.000000Z",
-     "type":  "Pilates",
-     "week": 4
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "2",
-     "schedule":  "2019-07-19T08:10:00.000000Z",
-     "type":  "Alongamento",
-     "week": 1
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "1",
-     "schedule":  "2019-07-19T08:30:00.000000Z",
-     "type":  "Jump",
-     "week": 1
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "1",
-     "schedule":  "2019-07-19T08:30:00.000000Z",
-     "type":  "Funcional Power",
-     "week": 2
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "2",
-     "schedule":  "2019-07-19T08:10:00.000000Z",
-     "type":  "Alongamento",
-     "week": 3
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "1",
-     "schedule":  "2019-07-19T08:30:00.000000Z",
-     "type":  "Jump",
-     "week": 3
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "1",
-     "schedule":  "2019-07-19T08:30:00.000000Z",
-     "type":  "Funcional Power",
-     "week": 4
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "1",
-     "schedule":  "2019-07-19T18:15:00.000000Z",
-     "type":  "Funcional Kids",
-     "week": 1
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "1",
-     "schedule":  "2019-07-19T18:15:00.000000Z",
-     "type":  "Ballet",
-     "week": 2
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "1",
-     "schedule":  "2019-07-19T18:15:00.000000Z",
-     "type":  "Funcional Kids",
-     "week": 3
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "1",
-     "schedule":  "2019-07-19T18:15:00.000000Z",
-     "type":  "Ballet",
-     "week": 4
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "2",
-     "schedule":  "2019-07-19T18:45:00.000000Z",
-     "type":  "Jump",
-     "week": 1
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "1",
-     "schedule":  "2019-07-19T19:30:00.000000Z",
-     "type":  "Funcional Power",
-     "week": 1
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "1",
-     "schedule":  "2019-07-19T19:30:00.000000Z",
-     "type":  "Zumba",
-     "week": 2
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "2",
-     "schedule":  "2019-07-19T18:45:00.000000Z",
-     "type":  "Jump",
-     "week": 3
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "1",
-     "schedule":  "2019-07-19T19:30:00.000000Z",
-     "type":  "Zumba",
-     "week": 4
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "1",
-     "schedule":  "2019-07-19T19:30:00.000000Z",
-     "type":  "Funcional Power",
-     "week": 3
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "2",
-     "schedule":  "2019-07-19T20:00:00.000000Z",
-     "type":  "Pilates",
-     "week": 2
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "2",
-     "schedule":  "2019-07-19T20:00:00.000000Z",
-     "type":  "Pilates",
-     "week": 4
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "2",
-     "schedule":  "2019-07-19T20:00:00.000000Z",
-     "type":  "Jiu-Jitsu",
-     "week": 1
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "2",
-     "schedule":  "2019-07-19T20:00:00.000000Z",
-     "type":  "Jiu-Jitsu",
-     "week": 3
-   },
-   {
-     "instructor": "Marcelo",
-     "living_room": "2",
-     "schedule":  "2019-07-19T20:00:00.000000Z",
-     "type":  "Jiu-Jitsu",
-     "week": 5
-   }
- ]
+[
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T06:30:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T06:30:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T06:30:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T06:30:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T06:30:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T07:15:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T07:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T07:15:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T07:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T07:15:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T08:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T08:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T08:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T08:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T08:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T08:45:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T08:45:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T08:45:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T08:45:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T08:45:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T09:30:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T09:30:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T09:30:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T09:30:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T09:30:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T10:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T10:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T10:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T10:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T10:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T14:15:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T14:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T14:15:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T14:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T14:15:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T15:00:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T15:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T15:00:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T15:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T15:00:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T15:45:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T15:45:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T15:45:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T15:45:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T15:45:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T16:30:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T16:30:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T16:30:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T16:30:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T16:30:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T17:15:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T17:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T17:15:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T17:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T17:15:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T18:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T18:00:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T18:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T18:00:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T18:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T18:45:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T18:45:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T18:45:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T18:45:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T18:45:00.000000Z",
+    "type": "Hidroginástica",
+    "color": "FF006064",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T19:30:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T19:30:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T19:30:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T19:30:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T19:30:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T20:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T20:15:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T20:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T20:15:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T20:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T21:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T21:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T21:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T21:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T21:00:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T21:45:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 1
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T21:45:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 2
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T21:45:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 3
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T21:45:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 4
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T21:45:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 5
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T08:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 6
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T09:00:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 6
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T09:45:00.000000Z",
+    "type": "Natação Infantil",
+    "color": "FF2196F3",
+    "week": 6
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T10:30:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 6
+  },
+  {
+    "instructor": "Jose",
+    "living_room": "0",
+    "schedule": "2019-07-19T11:15:00.000000Z",
+    "type": "Natação Adulto",
+    "color": "FF1565C0",
+    "week": 6
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "1",
+    "schedule": "2019-07-19T07:45:00.000000Z",
+    "type": "Zumba",
+    "color": null,
+    "week": 1
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "2",
+    "schedule": "2019-07-19T07:30:00.000000Z",
+    "type": "Pilates",
+    "color": null,
+    "week": 2
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "1",
+    "schedule": "2019-07-19T07:45:00.000000Z",
+    "type": "Zumba",
+    "color": null,
+    "week": 3
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "2",
+    "schedule": "2019-07-19T07:30:00.000000Z",
+    "type": "Pilates",
+    "color": null,
+    "week": 4
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "2",
+    "schedule": "2019-07-19T08:10:00.000000Z",
+    "type": "Alongamento",
+    "color": null,
+    "week": 1
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "1",
+    "schedule": "2019-07-19T08:30:00.000000Z",
+    "type": "Jump",
+    "color": null,
+    "week": 1
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "1",
+    "schedule": "2019-07-19T08:30:00.000000Z",
+    "type": "Funcional Power",
+    "color": null,
+    "week": 2
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "2",
+    "schedule": "2019-07-19T08:10:00.000000Z",
+    "type": "Alongamento",
+    "color": null,
+    "week": 3
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "1",
+    "schedule": "2019-07-19T08:30:00.000000Z",
+    "type": "Jump",
+    "color": null,
+    "week": 3
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "1",
+    "schedule": "2019-07-19T08:30:00.000000Z",
+    "type": "Funcional Power",
+    "color": null,
+    "week": 4
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "1",
+    "schedule": "2019-07-19T18:15:00.000000Z",
+    "type": "Funcional Kids",
+    "color": null,
+    "week": 1
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "1",
+    "schedule": "2019-07-19T18:15:00.000000Z",
+    "type": "Ballet",
+    "color": "FF9E9D24",
+    "week": 2
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "1",
+    "schedule": "2019-07-19T18:15:00.000000Z",
+    "type": "Funcional Kids",
+    "color": null,
+    "week": 3
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "1",
+    "schedule": "2019-07-19T18:15:00.000000Z",
+    "type": "Ballet",
+    "color": "FF9E9D24",
+    "week": 4
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "2",
+    "schedule": "2019-07-19T18:45:00.000000Z",
+    "type": "Jump",
+    "color": null,
+    "week": 1
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "1",
+    "schedule": "2019-07-19T19:30:00.000000Z",
+    "type": "Funcional Power",
+    "color": null,
+    "week": 1
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "1",
+    "schedule": "2019-07-19T19:30:00.000000Z",
+    "type": "Zumba",
+    "color": null,
+    "week": 2
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "2",
+    "schedule": "2019-07-19T18:45:00.000000Z",
+    "type": "Jump",
+    "color": null,
+    "week": 3
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "1",
+    "schedule": "2019-07-19T19:30:00.000000Z",
+    "type": "Zumba",
+    "color": null,
+    "week": 4
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "1",
+    "schedule": "2019-07-19T19:30:00.000000Z",
+    "type": "Funcional Power",
+    "color": null,
+    "week": 3
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "2",
+    "schedule": "2019-07-19T20:00:00.000000Z",
+    "type": "Pilates",
+    "color": null,
+    "week": 2
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "2",
+    "schedule": "2019-07-19T20:00:00.000000Z",
+    "type": "Pilates",
+    "color": null,
+    "week": 4
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "2",
+    "schedule": "2019-07-19T20:00:00.000000Z",
+    "type": "Jiu-Jitsu",
+    "color": null,
+    "week": 1
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "2",
+    "schedule": "2019-07-19T20:00:00.000000Z",
+    "type": "Jiu-Jitsu",
+    "color": null,
+    "week": 3
+  },
+  {
+    "instructor": "Marcelo",
+    "living_room": "2",
+    "schedule": "2019-07-19T20:00:00.000000Z",
+    "type": "Jiu-Jitsu",
+    "color": null,
+    "week": 5
+  }
+]

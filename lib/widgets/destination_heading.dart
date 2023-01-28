@@ -6,7 +6,7 @@ class DestinationHeading extends StatelessWidget {
   const DestinationHeading({
     Key? key,
     required this.screenSize,
-    this.title: 'Modalidades',
+    this.title = 'Modalidades',
   }) : super(key: key);
 
   final Size screenSize;

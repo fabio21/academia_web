@@ -1,54 +1,64 @@
 import 'package:flutter/material.dart';
 
 var lightThemeData = ThemeData(
-  primarySwatch: Colors.blueGrey,
-  backgroundColor: Colors.white,
   cardColor: Colors.blueGrey[50],
   dividerColor: Colors.blueGrey[900],
   primaryTextTheme: TextTheme(
-      button: TextStyle(
-        color: Colors.blueGrey,
-        decorationColor: Colors.blueGrey[300],
-      ),
-      subtitle2: TextStyle(
-        color: Colors.blueGrey[900],
-      ),
-      subtitle1: TextStyle(
-        color: Colors.black,
-      ),
-      headline1: TextStyle(color: Colors.blueGrey[800]),
-      headline2: TextStyle(color: Colors.blueGrey[800], fontSize: 18)),
-  bottomAppBarColor: Colors.blueGrey[900],
+    labelLarge: TextStyle(
+      color: Colors.blueGrey,
+      decorationColor: Colors.blueGrey[300],
+    ),
+    titleSmall: TextStyle(
+      color: Colors.blueGrey[900],
+    ),
+    titleMedium: TextStyle(
+      color: Colors.black,
+    ),
+    displayLarge: TextStyle(color: Colors.blueGrey[800]),
+    displayMedium: TextStyle(color: Colors.blueGrey[800], fontSize: 18),
+  ),
   iconTheme: IconThemeData(color: Colors.blueGrey),
   brightness: Brightness.light,
+  colorScheme: ColorScheme.fromSwatch(
+    primarySwatch: Colors.blueGrey,
+    brightness: Brightness.light,
+  ).copyWith(
+    background: Colors.white,
+    primary: Colors.white,
+    primaryContainer: Colors.white,
+  ),
+  bottomAppBarTheme: BottomAppBarTheme(color: Colors.blueGrey[900]),
 );
 
 var darkThemeData = ThemeData(
-  primarySwatch: Colors.blueGrey,
-  backgroundColor: Colors.blueGrey[900],
   cardColor: Colors.black,
   dividerColor: Colors.blueGrey[200],
   primaryTextTheme: TextTheme(
-    button: TextStyle(
+    labelLarge: TextStyle(
       color: Colors.blueGrey[200],
       decorationColor: Colors.blueGrey[50],
     ),
-    subtitle2: TextStyle(
+    titleSmall: TextStyle(
       color: Colors.white,
     ),
-    subtitle1: TextStyle(
+    titleMedium: TextStyle(
       color: Colors.blueGrey[300],
     ),
-    headline1: TextStyle(
+    displayLarge: TextStyle(
       color: Colors.white70,
     ),
-    headline2: TextStyle(
+    displayMedium: TextStyle(
       color: Colors.white70,
       fontSize: 18,
     ),
-
   ),
-  bottomAppBarColor: Colors.black,
   iconTheme: IconThemeData(color: Colors.blueGrey[200]),
   brightness: Brightness.dark,
+  colorScheme: ColorScheme.fromSwatch(
+    primarySwatch: Colors.blueGrey,
+    brightness: Brightness.dark,
+  ).copyWith(
+    background: Colors.blueGrey[900],
+  ),
+  bottomAppBarTheme: BottomAppBarTheme(color: Colors.black),
 );

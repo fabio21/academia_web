@@ -54,11 +54,11 @@ class FeaturedHeading extends StatelessWidget {
     return Text(
       'Uma vida sustentável contribui para a saúde',
       textAlign: TextAlign.end,
-      style: Theme.of(context).primaryTextTheme.subtitle1,
+      style: Theme.of(context).primaryTextTheme.titleMedium,
     );
   }
 
-  Text buildTextHeader({double fontSize: 24}) {
+  Text buildTextHeader({double fontSize = 24}) {
     return Text(
       'Evolução',
       style: TextStyle(

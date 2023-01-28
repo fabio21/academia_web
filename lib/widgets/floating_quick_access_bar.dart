@@ -75,7 +75,7 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
                         style: TextStyle(
                             color: Theme.of(context)
                                 .primaryTextTheme
-                                .button!
+                                .labelLarge!
                                 .color,
                             fontSize: 16),
                       ),
@@ -141,8 +141,8 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
           items[i],
           style: TextStyle(
             color: _isHovering[i]
-                ? Theme.of(context).primaryTextTheme.button!.decorationColor
-                : Theme.of(context).primaryTextTheme.button!.color,
+                ? Theme.of(context).primaryTextTheme.labelLarge!.decorationColor
+                : Theme.of(context).primaryTextTheme.labelLarge!.color,
           ),
         ),
       );

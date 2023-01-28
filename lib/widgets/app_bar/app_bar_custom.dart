@@ -13,7 +13,7 @@ PreferredSize buildPreferredSizeWeb(Size screenSize,double opacity) {
 AppBar buildAppBarMoble(BuildContext context, double opacity) {
   return AppBar(
     backgroundColor:
-    Theme.of(context).bottomAppBarColor.withOpacity(opacity),
+    Theme.of(context).bottomAppBarTheme.color?.withOpacity(opacity),
     elevation: 0,
     centerTitle: true,
     actions: [

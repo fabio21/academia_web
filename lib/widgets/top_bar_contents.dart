@@ -38,8 +38,7 @@ class _TopBarContentsState extends State<TopBarContents> {
       child: Container(
         color: Theme
             .of(context)
-            .bottomAppBarColor
-            .withOpacity(widget.opacity),
+            .bottomAppBarTheme.color!.withOpacity(widget.opacity),
         child: Padding(
           padding: EdgeInsets.all(20),
           child: Row(
@@ -109,8 +108,7 @@ class _TopBarContentsState extends State<TopBarContents> {
           SizedBox(width: 10),
           TextButton(
             style: TextButton.styleFrom(
-              primary: Colors.blueGrey,
-              shape: RoundedRectangleBorder(
+              foregroundColor: Colors.blueGrey, shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
               ),
             ),

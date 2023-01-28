@@ -1,8 +1,6 @@
 import 'dart:convert';
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:web_site_academia/model/timesheet.dart';
 import 'package:web_site_academia/widgets/app_bar/app_bar_custom.dart';
 import 'package:web_site_academia/widgets/bottom_bar.dart';
@@ -11,8 +9,6 @@ import 'package:web_site_academia/widgets/responsive.dart';
 import 'package:web_site_academia/widgets/stack_image_header.dart';
 import 'package:web_site_academia/widgets/web_scrollbar.dart';
 import 'package:intl/intl.dart';
-
-import '../decoration.dart';
 
 String getDayWeek(int index) {
   switch (index) {
@@ -147,7 +143,7 @@ class _TimeSheetState extends State<TimeSheet> {
         ? _scrollPosition / (screenSize.height * 0.40)
         : 1;
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       extendBodyBehindAppBar: true,
       appBar: ResponsiveWidget.isSmallScreen(context)
           ? buildAppBarMoble(context, _opacity)
@@ -207,43 +203,49 @@ class _TimeSheetState extends State<TimeSheet> {
 
   Widget getCards(TimesheetModel model) {
     return Flexible(
+      fit: FlexFit.tight,
       child: Container(
         padding: EdgeInsets.only(left: 12, top: 8, right: 12, bottom: 8),
         alignment: Alignment.center,
         decoration: BoxDecoration(
-            border:
-                Border(top: BorderSide(color: Theme.of(context).dividerColor))),
-        child: RichText(
-          textAlign: TextAlign.center,
-          text: TextSpan(
-            //text: "${getDayWeek(model.week ?? 0)}\n",
-            style: TextStyle(
-              fontSize: 18,
-              color: Colors.black54,
-              fontWeight: FontWeight.w700,
+          color: model.color != null ? Color(model.color!) : null,
+          border: Border(
+            top: BorderSide(color: Theme.of(context).dividerColor),
+          ),
+        ),
+        child: FittedBox(
+          fit: BoxFit.contain,
+          child: RichText(
+            textAlign: TextAlign.center,
+            text: TextSpan(
+              style: TextStyle(
+                fontSize: 18,
+                color: Colors.black54,
+                fontWeight: FontWeight.w700,
+              ),
+              children: [
+                lineTitleSubTitle(
+                    subTitle: model.type!, theme: TextStyle(fontSize: 20)),
+                lineTitleSubTitle(
+                    title: "Instrutor: ", subTitle: model.instructor!),
+                lineTitleSubTitle(
+                    title: "Horario: ", subTitle: formatHour(model.schedule!)),
+                if (model.livingRoom != "0")
+                  lineTitleSubTitle(title: "Sala: ", subTitle: model.livingRoom!)
+              ],
             ),
-            children: [
-              lineTitleSubTitle(
-                  subTitle: model.type!, theme: TextStyle(fontSize: 20)),
-              lineTitleSubTitle(
-                  title: "Instrutor: ", subTitle: model.instructor!),
-              lineTitleSubTitle(
-                  title: "Horario: ", subTitle: formatHour(model.schedule!)),
-              if (model.livingRoom != "0")
-                lineTitleSubTitle(title: "Sala: ", subTitle: model.livingRoom!)
-            ],
           ),
         ),
       ),
     );
   }
 
-  TextSpan lineTitleSubTitle(
+ TextSpan lineTitleSubTitle(
       {String? title, required String subTitle, TextStyle? theme}) {
-    theme = theme != null ? theme : Theme.of(context).textTheme.subtitle1;
+    theme = theme != null ? theme : Theme.of(context).textTheme.titleMedium;
     return TextSpan(
       text: title ?? "",
-      style: Theme.of(context).textTheme.subtitle2,
+      style: Theme.of(context).textTheme.titleSmall,
       children: [
         TextSpan(
           text: "$subTitle\n",
@@ -270,9 +272,13 @@ class _TimeSheetState extends State<TimeSheet> {
     List<Widget> s = [
       Container(
           height: 40,
-          child: Text(
-            title,
-            style: TextStyle(fontSize: 24),
+          padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+          child: FittedBox(
+            fit: BoxFit.contain,
+            child: Text(
+              title,
+              style: TextStyle(fontSize: 24),
+            ),
           )),
     ];
     var sl = timesheetModel!.where((element) => element.week == week).toList();

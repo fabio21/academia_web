@@ -31,7 +31,7 @@ class _AuthDialogState extends State<AuthDialog> {
       if (value.isEmpty) {
         return 'Email can\'t be empty';
       } else if (!value.contains(RegExp(
-          r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+"))) {
+          r"^[a-zA-Z0-9.a-zA-Z0-9!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+"))) {
         return 'Enter a correct email address';
       }
     }
@@ -67,7 +67,7 @@ class _AuthDialogState extends State<AuthDialog> {
   @override
   Widget build(BuildContext context) {
     return Dialog(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).colorScheme.background,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8.0),
       ),
@@ -76,7 +76,7 @@ class _AuthDialogState extends State<AuthDialog> {
           padding: const EdgeInsets.all(16.0),
           child: Container(
             width: 400,
-            color: Theme.of(context).backgroundColor,
+            color: Theme.of(context).colorScheme.background,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
@@ -85,7 +85,7 @@ class _AuthDialogState extends State<AuthDialog> {
                   child: Text(
                     'EXPLORE',
                     style: TextStyle(
-                      color: Theme.of(context).textTheme.headline1!.color,
+                      color: Theme.of(context).textTheme.displayLarge!.color,
                       fontSize: 24,
                       fontFamily: 'Montserrat',
                       fontWeight: FontWeight.bold,
@@ -103,7 +103,7 @@ class _AuthDialogState extends State<AuthDialog> {
                     'Email address',
                     textAlign: TextAlign.left,
                     style: TextStyle(
-                      color: Theme.of(context).textTheme.subtitle2!.color,
+                      color: Theme.of(context).textTheme.titleSmall!.color,
                       fontSize: 18,
                       // fontFamily: 'Montserrat',
                       fontWeight: FontWeight.bold,
@@ -167,7 +167,7 @@ class _AuthDialogState extends State<AuthDialog> {
                     'Password',
                     textAlign: TextAlign.left,
                     style: TextStyle(
-                      color: Theme.of(context).textTheme.subtitle2!.color,
+                      color: Theme.of(context).textTheme.titleSmall!.color,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                       // letterSpacing: 3,
@@ -233,8 +233,7 @@ class _AuthDialogState extends State<AuthDialog> {
                           width: double.maxFinite,
                           child: TextButton(
                             style: TextButton.styleFrom(
-                              primary: Colors.blueGrey.shade800,
-                              shape: RoundedRectangleBorder(
+                              foregroundColor: Colors.blueGrey.shade800, shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15.0),
                               ),
                             ),
@@ -327,8 +326,7 @@ class _AuthDialogState extends State<AuthDialog> {
                           width: double.maxFinite,
                           child: TextButton(
                             style: TextButton.styleFrom(
-                              primary: Colors.blueGrey.shade800,
-                              shape: RoundedRectangleBorder(
+                              foregroundColor: Colors.blueGrey.shade800, shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
                               ),
                             ),
@@ -429,7 +427,7 @@ class _AuthDialogState extends State<AuthDialog> {
                     'By proceeding, you agree to our Terms of Use and confirm you have read our Privacy Policy.',
                     maxLines: 2,
                     style: TextStyle(
-                      color: Theme.of(context).textTheme.subtitle2!.color,
+                      color: Theme.of(context).textTheme.titleSmall!.color,
                       fontSize: 14,
                       fontWeight: FontWeight.w300,
                       // letterSpacing: 3,

@@ -4,13 +4,13 @@ import 'package:web_site_academia/widgets/responsive.dart';
 
 import 'bottom_bar_column.dart';
 import 'info_text.dart';
-
+final location = Uri.parse("https://www.google.com/maps/place/R.+Sete+Lagoas,+5+-+Conj.+Hab.+Pres.+Castelo+Branco,+Carapicu%C3%ADba+-+SP,+06328-140/@-23.5269505,-46.8206613,3a,75y,168.75h,96.41t/data=!3m6!1e1!3m4!1s-Q2pVtEY2d-W4a_Am4yGFw!2e0!7i16384!8i8192!4m5!3m4!1s0x94cefe28adf50087:0x59edd375261c8199!8m2!3d-23.5271861!4d-46.820603");
 class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(30),
-      color: Theme.of(context).bottomAppBarColor,
+      color: Theme.of(context).bottomAppBarTheme.color,
       child: ResponsiveWidget.isSmallScreen(context)
           ? buildColumnMobile()
           : buildColumnWEB(),
@@ -66,14 +66,10 @@ class BottomBar extends StatelessWidget {
         buildInfoTel(),
         SizedBox(height: 5),
         buildInfoWhatsapp(),
-
         buildContainerLine(),
-
         buildBottomBarAbout(),
         buildContainerLine(),
-
         buildTextCopyright(),
-
       ],
     );
   }
@@ -91,8 +87,7 @@ class BottomBar extends StatelessWidget {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
-        onTap: () => mapLocale(
-            "https://www.google.com/maps/place/R.+Sete+Lagoas,+5+-+Conj.+Hab.+Pres.+Castelo+Branco,+Carapicu%C3%ADba+-+SP,+06328-140/@-23.5269505,-46.8206613,3a,75y,168.75h,96.41t/data=!3m6!1e1!3m4!1s-Q2pVtEY2d-W4a_Am4yGFw!2e0!7i16384!8i8192!4m5!3m4!1s0x94cefe28adf50087:0x59edd375261c8199!8m2!3d-23.5271861!4d-46.820603"),
+        onTap: () => mapLocale(location),
         child: InfoText(
           type: 'Endereço',
           text: 'Rua Sete Lagos, 05 - Cohab 2 - Carapicuiba - SP - 06328-140',
@@ -105,8 +100,7 @@ class BottomBar extends StatelessWidget {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
-        onTap: () => mapLocale(
-            "https://www.google.com/maps/place/R.+Sete+Lagoas,+5+-+Conj.+Hab.+Pres.+Castelo+Branco,+Carapicu%C3%ADba+-+SP,+06328-140/@-23.5269505,-46.8206613,3a,75y,168.75h,96.41t/data=!3m6!1e1!3m4!1s-Q2pVtEY2d-W4a_Am4yGFw!2e0!7i16384!8i8192!4m5!3m4!1s0x94cefe28adf50087:0x59edd375261c8199!8m2!3d-23.5271861!4d-46.820603"),
+        onTap: () => mapLocale(location),
         child: InfoText(
           type: 'Endereço',
           text: 'Rua Sete Lagos, 05 - Cohab 2 - Carapicuiba - SP - 06328-140',
@@ -119,7 +113,7 @@ class BottomBar extends StatelessWidget {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
-        onTap: () => fazerLigacao(),
+        onTap: () => callForNumber(),
         child: InfoText(
           type: 'Telefone: ',
           text: '(11) 4184-4742',
@@ -132,7 +126,7 @@ class BottomBar extends StatelessWidget {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
-        onTap: () => openWhatsApp("5511992747939"),
+        onTap: () => parseWhatsApp("5511992747939"),
         child: InfoText(
           type: 'Whatsapp: ',
           text: '(11) 9 9274-7939',
@@ -141,28 +135,29 @@ class BottomBar extends StatelessWidget {
     );
   }
 
-  openWhatsApp(String cell) async {
-    var whatsappUrl = "whatsapp://send?web=+$cell&text=Olá,tudo bem ?";
-    if (await canLaunch(whatsappUrl)) {
-      abrirWhatsApp(whatsappUrl);
+  parseWhatsApp(String cell) async {
+    var whatsappUrl =
+        Uri.parse("whatsapp://send?web=+$cell&text=Olá,tudo bem ?");
+    if (await canLaunchUrl(whatsappUrl)) {
+      openWhatsApp(whatsappUrl);
     } else {
-      var whatsappUrl = "https://wa.me/$cell/?text=Olá,tudo bem?";
-      if (await canLaunch(whatsappUrl)) {
-        abrirWhatsApp(whatsappUrl);
+      var whatsappUrl = Uri.parse("https://wa.me/$cell/?text=Olá,tudo bem?");
+      if (await canLaunchUrl(whatsappUrl)) {
+        openWhatsApp(whatsappUrl);
       } else {
         throw 'Could not launch $whatsappUrl';
       }
     }
   }
 
-  abrirWhatsApp(String whatsappUrl) async {
-    await launch(whatsappUrl);
+  openWhatsApp(Uri whatsappUrl) async {
+    await launchUrl(whatsappUrl);
   }
 
-  void fazerLigacao() async {
-    const url = "tel:1141844742";
-    if (await canLaunch(url)) {
-      await launch(url);
+  void callForNumber() async {
+    var url = Uri.parse("tel:1141844742");
+    if (await canLaunchUrl(url)) {
+      await launchUrl(url);
     } else {
       throw 'Could not launch $url';
     }
@@ -194,14 +189,13 @@ class BottomBar extends StatelessWidget {
       path: email,
       query: encodeQueryParameters(<String, String>{'subject': 'Pergunta!'}),
     );
-    launch(emailLaunchUri.toString());
+    launchUrl(emailLaunchUri);
   }
 
   Widget buildBottomBarFacebook() {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
-      child:
-      BottomBarColumn(
+      child: BottomBarColumn(
         heading: 'SOCIAL',
         s1: 'Instagram',
         icon1: Icons.camera_alt_outlined,
@@ -212,7 +206,6 @@ class BottomBar extends StatelessWidget {
       ),
     );
   }
-
 
   BottomBarColumn buildBottomBarFaq() {
     return BottomBarColumn(
@@ -230,16 +223,11 @@ class BottomBar extends StatelessWidget {
     );
   }
 
-  mapLocale(String url) async {
-    if (await canLaunch(url)) {
-      await launch(
-        url,
-        forceSafariVC: false,
-        forceWebView: false,
-      );
+  mapLocale(Uri url) async {
+    if (await canLaunchUrl(url)) {
+      await launchUrl(url);
     } else {
       throw 'Could not launch $url';
     }
   }
-
 }
